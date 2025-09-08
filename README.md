@@ -1,8 +1,11 @@
 # MediCare - Reserva de Citas Médicas
 
 ## Descripción
-Proyecto web para reservar citas médicas, con integración a Google Calendar.  
-Formulario validado y responsive, con interfaz amigable y estilo médico.
+Proyecto web para reservar citas médicas, con integración en Google Calendar.  
+Formulario validado y responsivo, con interfaz amigable y estilo médico.
+
+## Demo
+Puedes ver el demo en GitHub Pages: [https://noeliagom.github.io/Citas-medicas-medicare] (https://noeliagom.github.io/Citas-medicas-medicare)
 
 ## Instalación / Cómo usar
 1. Clonar o descargar este repositorio.
@@ -13,7 +16,7 @@ Formulario validado y responsive, con interfaz amigable y estilo médico.
 - HTML5
 - CSS3
 - JavaScript
-- Google Calendar API
+- API de Google Calendar
 
 ## Licencia
 Software libre. Puedes usar y modificar el código sin restricciones.
