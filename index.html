@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva tu cita</title>
+    <!-- Enlace al CSS externo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Reserva tu cita</h2>
+        <form id="reservaForm">
+            <input type="text" id="nombre" placeholder="Nombre completo" required>
+            <input type="email" id="email" placeholder="Correo electrónico" required>
+            <input type="date" id="fecha" required>
+            <input type="time" id="hora" required>
+            <button type="submit">Reservar cita</button>
+        </form>
+        <p id="mensaje"></p>
+        <a id="linkPaciente" href="#" target="_blank" style="display:none;">Agregar al calendario del paciente</a>
+    </div>
+
+    <!-- Librería de Google API -->
+    <script src="https://apis.google.com/js/api.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
