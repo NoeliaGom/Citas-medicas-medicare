@@ -3,27 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reserva tu cita</title>
-    <!-- Enlace al CSS externo -->
+    <title>MediCare - Reserva tu cita</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h2>Reserva tu cita</h2>
-        <form id="reservaForm">
-            <input type="text" id="nombre" placeholder="Nombre completo" required>
-            <input type="email" id="email" placeholder="Correo electrónico" required>
-            <input type="date" id="fecha" required>
-            <input type="time" id="hora" required>
-            <button type="submit">Reservar cita</button>
-        </form>
-        <p id="mensaje"></p>
-        <a id="linkPaciente" href="#" target="_blank" style="display:none;">Agregar al calendario del paciente</a>
+    
+    <!-- Navbar con logo -->
+    <nav>
+        <div class="logo">🩺 MediCare</div>
+    </nav>
+
+    <!-- Contenedor principal con dos columnas -->
+    <div class="main-container">
+        <!-- Columna izquierda: Bienvenida -->
+        <div class="welcome-section">
+            <h1>¡Bienvenido a MediCare!</h1>
+            <p>Haz tu cita médica de manera rápida y segura.
+                Estamos aquí para cuidar de ti.
+            </p>
+        </div>
+
+        <!-- Columna derecha: Formulario -->
+        <div class="form-section">
+            <h2>Reserva tu cita</h2>
+            <form id="reservaForm">
+                <input type="text" id="nombre" placeholder="Nombre completo" required>
+                <input type="email" id="email" placeholder="Correo electrónico" required>
+                <input type="date" id="fecha" required>
+                <input type="time" id="hora" required>
+                <button type="submit">Reservar cita</button>
+            </form>
+            <p id="mensaje"></p>
+            <a id="linkPaciente" href="#" target="_blank">Agregar al calendario del paciente</a>
+        </div>
     </div>
 
-    <!-- Librería de Google API -->
-    <script src="https://apis.google.com/js/api.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
+
 
