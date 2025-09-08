@@ -1,7 +1,7 @@
-/* ==============================================
+/*
   MediCare - Formulario de citas médicas
   Licencia: Software libre, se puede usar y modificar
-================================================== */
+ */
 
 * {
     margin: 0;
@@ -10,7 +10,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-/* Body y fondo con detalle sutil para citas medicas*/
 body {
     min-height: 100vh;
     background: linear-gradient(to right, #a1c4fd, #c2e9fb);
@@ -32,7 +31,7 @@ nav .logo {
     color: #fff;
 }
 
-/* Contenedor principal con dos columnas */
+/* Contenedor principal */
 .main-container {
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -47,9 +46,9 @@ nav .logo {
     max-width: 400px;
     text-align: left;
     color: #1e3c72;
+    position: relative;
 }
 
-/* Títulos y textos */
 .welcome-section h1 {
     font-size: 36px;
     margin-bottom: 15px;
@@ -69,6 +68,14 @@ nav .logo {
     width: 100%;
     max-width: 400px;
     text-align: center;
+    position: relative;
+}
+
+/* Icono en el form */
+.form-icon {
+    font-size: 50px;
+    color: #1e3c72;
+    margin-bottom: 15px;
 }
 
 /* Título del formulario */
@@ -138,7 +145,7 @@ nav .logo {
     text-decoration: underline;
 }
 
-/* Responsive: apilado vertical en móviles */
+/* Responsive */
 @media (max-width: 900px) {
     .main-container {
         grid-template-columns: 1fr; 
