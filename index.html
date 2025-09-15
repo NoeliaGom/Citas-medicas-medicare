@@ -6,45 +6,45 @@
     <title>MediCare - Reserva tu cita</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <!-- Licencia: Software libre, se puede usar y modificar -->
 </head>
-     <!-- Licencia: Software libre, se puede usar y modificar -->
 <body>
-    
-    <!-- Navbar con logo -->
+    <!-- Navbar con logo e íconos -->
     <nav>
         <div class="logo">🩺 MediCare</div>
+        <ul class="nav-links">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Reservar Cita</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
     </nav>
 
-    <!-- Contenedor principal con dos columnas -->
+    <!-- Contenedor principal con bienvenida y formulario -->
     <div class="main-container">
-        <!-- Columna izquierda: Bienvenida -->
-        <div class="welcome-section">
+        <!-- Bienvenida -->
+        <section class="welcome-section">
             <h1>¡Bienvenido a MediCare!</h1>
-            <p>Haz tu cita médica de manera rápida y segura.
-                Estamos aquí para cuidar de ti.
-            </p>
-        </div>
+            <p>Haz tu cita médica de manera rápida y segura. Estamos aquí para cuidar de ti.</p>
+        </section>
 
-        <!-- Columna derecha: Formulario -->
-        <div class="form-section">
-            <!-- Icono de estetoscopio en el form -->
-            <div class="form-icon">🩺</div>
+        <!-- Formulario de reserva -->
+        <section class="form-section">
+            <img src="estetoscopio.png" alt="Icono Estetoscopio" class="form-icon">
             <h2>Reserva tu cita</h2>
-            <form id="reservaForm">
+            <form id="citaForm">
                 <input type="text" id="nombre" placeholder="Nombre completo" required>
                 <input type="email" id="email" placeholder="Correo electrónico" required>
                 <input type="date" id="fecha" required>
                 <input type="time" id="hora" required>
                 <button type="submit">Reservar cita</button>
             </form>
-            <p id="mensaje"></p>
-            <a id="linkPaciente" href="#" target="_blank">Agregar al calendario del paciente</a>
-        </div>
+            <p id="mensajeConfirmacion"></p>
+        </section>
     </div>
 
     <!-- Librería Google API y JS del proyecto -->
-    <script src="https://apis.google.com/js/api.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
+
 
