@@ -1,7 +1,7 @@
 /*
   MediCare - Formulario de citas médicas
   Licencia: Software libre, se puede usar y modificar
- */
+*/
 
 * {
     margin: 0;
@@ -17,25 +17,40 @@ body {
 
 /* Navbar */
 nav {
-    width: 100%;
-    padding: 15px 30px;
-    background-color: #1e3c72;
-    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
     display: flex;
+    justify-content: space-between;
     align-items: center;
+    background-color: #1e3c72;
+    padding: 15px 30px;
 }
 
 nav .logo {
     font-size: 24px;
-    font-weight: bold;
     color: #fff;
+    font-weight: bold;
+}
+
+nav .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav .nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+nav .nav-links li a:hover {
+    color: #c2e9fb;
 }
 
 /* Contenedor principal */
 .main-container {
     display: grid;
-    grid-template-columns: 1fr 1fr; 
-    gap: 20px; 
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
     align-items: center;
     justify-items: center;
     padding: 50px;
@@ -44,9 +59,7 @@ nav .logo {
 /* Bienvenida */
 .welcome-section {
     max-width: 400px;
-    text-align: left;
     color: #1e3c72;
-    position: relative;
 }
 
 .welcome-section h1 {
@@ -64,17 +77,15 @@ nav .logo {
     background: #ffffff;
     padding: 40px 30px;
     border-radius: 15px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
     width: 100%;
     max-width: 400px;
     text-align: center;
-    position: relative;
 }
 
 /* Icono en el form */
 .form-icon {
-    font-size: 50px;
-    color: #1e3c72;
+    width: 60px;
     margin-bottom: 15px;
 }
 
@@ -97,15 +108,14 @@ nav .logo {
     border: 1px solid #ccc;
     outline: none;
     font-size: 15px;
-    transition: all 0.3s ease;
 }
 
 .form-section input:focus {
     border-color: #1e3c72;
-    box-shadow: 0 0 8px rgba(30, 60, 114, 0.3);
+    box-shadow: 0 0 8px rgba(30,60,114,0.3);
 }
 
-/* Botón del formulario */
+/* Botón */
 .form-section button {
     width: 50%;
     padding: 12px;
@@ -117,7 +127,7 @@ nav .logo {
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: 0.3s;
 }
 
 .form-section button:hover {
@@ -125,31 +135,16 @@ nav .logo {
 }
 
 /* Mensaje de confirmación */
-#mensaje {
+#mensajeConfirmacion {
     margin-top: 20px;
     font-weight: bold;
     color: #28a745;
 }
 
-/* Link de calendario */
-#linkPaciente {
-    display: none;
-    margin-top: 15px;
-    color: #1e3c72;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-#linkPaciente:hover {
-    color: #145da0;
-    text-decoration: underline;
-}
-
 /* Responsive */
 @media (max-width: 900px) {
     .main-container {
-        grid-template-columns: 1fr; 
-        gap: 30px;
+        grid-template-columns: 1fr;
         padding: 20px;
     }
     .welcome-section {
