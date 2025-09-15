@@ -75,8 +75,9 @@ nav .logo {
 .form-icon {
     font-size: 50px;
     color: #1e3c72;
-    margin-bottom: 15px;
-}
+    margin-bottom: 25px; /* Aumenta el espacio debajo del emoji */
+    display: block;
+    text-align: center;
 
 /* Título del formulario */
 .form-section h2 {
@@ -156,5 +157,6 @@ nav .logo {
         text-align: center;
     }
 }
+
 
 
