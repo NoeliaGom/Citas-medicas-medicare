@@ -71,6 +71,12 @@ nav .logo {
     text-align: center;
 }
 
+/* Emoji estetoscopio */
+.icono-estetoscopio {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
 /* Título del formulario */
 .form-section h2 {
     font-size: 28px;
@@ -149,4 +155,5 @@ nav .logo {
         text-align: center;
     }
 }
+
 
