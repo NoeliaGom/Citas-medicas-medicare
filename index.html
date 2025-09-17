@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MediCare - Reserva de Citas</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare - Reserva tu cita</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>¡Bienvenido a MediCare!</h1>
-    <p>Haz tu cita médica de manera rápida y segura.<br>Estamos aquí para cuidar de ti.</p>
-  </header>
+    
+    <!-- Navbar con logo -->
+    <nav>
+        <div class="logo">🩺 MediCare</div>
+    </nav>
 
-  <main>
-    <section class="form-section">
-      <h2>🩺 Reserva tu cita</h2>
-      <form id="appointmentForm">
-        <input type="text" id="name" placeholder="Nombre completo" required>
-        <input type="email" id="email" placeholder="Correo electrónico" required>
-        <input type="date" id="date" required>
-        <input type="time" id="time" required>
-        <button type="submit">Reservar cita</button>
-      </form>
-      <p id="calendarLink"></p>
-    </section>
-  </main>
+    <!-- Contenedor principal con dos columnas -->
+    <div class="main-container">
+        <!-- Columna izquierda: Bienvenida -->
+        <div class="welcome-section">
+            <h1>¡Bienvenido a MediCare!</h1>
+            <p>Haz tu cita médica de manera rápida y segura.
+                Estamos aquí para cuidar de ti.
+            </p>
+        </div>
 
-  <script src="script.js"></script>
+        <!-- Columna derecha: Formulario -->
+        <div class="form-section">
+            <h2>Reserva tu cita</h2>
+            <form id="reservaForm">
+                <input type="text" id="nombre" placeholder="Nombre completo" required>
+                <input type="email" id="email" placeholder="Correo electrónico" required>
+                <input type="date" id="fecha" required>
+                <input type="time" id="hora" required>
+                <button type="submit">Reservar cita</button>
+            </form>
+            <p id="mensaje"></p>
+            <a id="linkPaciente" href="#" target="_blank">Agregar al calendario del paciente</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
-
 
 
