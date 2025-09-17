@@ -71,10 +71,13 @@ nav .logo {
     text-align: center;
 }
 
-/* Emoji estetoscopio */
-.icono-estetoscopio {
-    font-size: 48px;
-    margin-bottom: 10px;
+/* Icono en el form */
+.form-icon {
+    font-size: 50px;
+    color: #1e3c72;
+    margin-bottom: 25px; /* Aumenta el espacio debajo del emoji */
+    display: block;
+    text-align: center;
 }
 
 /* Título del formulario */
@@ -155,5 +158,6 @@ nav .logo {
         text-align: center;
     }
 }
+
 
 
